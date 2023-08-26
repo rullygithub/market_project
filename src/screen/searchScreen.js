@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import React, {useState, useEffect} from 'react';
 import SearchBar from '../component/searchBar';
 import yelp from '../api/yelp';
@@ -16,20 +16,20 @@ const SearchScreen = () => {
     })
   }
   return (
-    <View>
+    <ScrollView>
       <SearchBar
         term={term}
         onTermChange={setTerm}
         onTermSubmitted={() => searchApi(term)}
       />
       {errorMsg ? <Text style={{color: 'white'}}>{errorMsg}</Text> : null}
-      <View>
+      {/* <View>
         <Text style={{color: 'white'}}>Found {results.length} Results</Text>
-      </View>
+      </View> */}
       <ResultsList results={filterResult('$')} title="Cost Effective"/>
       <ResultsList results={filterResult('$$')} title="Bit Pricier"/>
       <ResultsList results={filterResult('$$$')} title="Big Spender"/>
-    </View>
+    </ScrollView>
   );
 };
 
