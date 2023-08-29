@@ -25,6 +25,7 @@ import FeatureScreen from './src/screen/feature';
 import FeatureSecond from './src/screen/featureSecond';
 import FeatureThree from './src/screen/featurThree';
 import Homescreen from './src/screen/pages/homescreen';
+import ResultShow from './src/screen/pages/resultShow';
 
 const Stack = createNativeStackNavigator();
 
@@ -37,6 +38,7 @@ function App() {
         <Stack.Screen name='FeaturSecond' component={FeatureSecond} options={{headerShown: false}}></Stack.Screen>
         <Stack.Screen name='FeaturThree' component={FeatureThree} options={{headerShown: false}}></Stack.Screen>
         <Stack.Screen name='Homescreen' component={Homescreen} options={{headerShown: false}}></Stack.Screen>
+        <Stack.Screen name='ResultShow' component={ResultShow} options={{headerShown: false}}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );

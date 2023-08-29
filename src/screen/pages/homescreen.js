@@ -1,6 +1,7 @@
 import {Image, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import SearchScreen from '../searchScreen';
+import Footer from '../../component/footer';
 
 
 const Header = () => {
@@ -31,6 +32,7 @@ const Header = () => {
           </View>
         </TouchableOpacity>
       </View>
+      
     </View>
   );
 };
@@ -38,6 +40,7 @@ const Homescreen = () => {
   return <View style={styles.container}>
     <Header/>
     <SearchScreen/>
+    <Footer/>
   </View>;
 };
 
