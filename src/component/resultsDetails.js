@@ -21,7 +21,8 @@ export default ResultsDetails;
 
 const styles = StyleSheet.create({
     container: {
-        marginRight: 10
+        marginRight: 10,
+        
     },
   image: {
     width: 200,
@@ -33,6 +34,7 @@ const styles = StyleSheet.create({
   bodyResult: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+
   }
 });

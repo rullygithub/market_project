@@ -4,6 +4,7 @@ import yelp from '../../api/yelp';
 import HeaderAll from '../../component/headerAll';
 import Icon from 'react-native-vector-icons/AntDesign';
 import Footer from '../../component/footer';
+import TitleBar from '../../component/titleBar';
 
 const ResultShow = ({route}) => {
   const [result, setResult] = useState(null);
@@ -58,6 +59,7 @@ const ResultShow = ({route}) => {
           </Text>
         </View>
       </View>
+      <TitleBar/>
       </ScrollView>
       {/* <Footer/> */}
     </View>
@@ -68,7 +70,9 @@ export default ResultShow;
 
 const styles = StyleSheet.create({
   container: {
-    position: 'relative'
+    position: 'relative',
+    backgroundColor: 'white',
+    flex: 1,
   },
   containerImg: {
     backgroundColor: 'white',
